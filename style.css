@@ -1114,19 +1114,30 @@ svg {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
     .slider {
-        height: 320px;
+        height: 550px;
+        overflow-x: hidden;
     }
 
     .item {
-        width: 200px; /* Smaller width for mobile */
-        height: 400px; /* Adjust height for mobile */
-        left: calc(50% - 100px); /* Center align on mobile */
+        width: 210px; /* Smaller width for mobile */
+        height: 550px; /* Adjust height for mobile */
+        left: calc(50% - 105px); /* Center align on mobile */
+        font-size: 1rem;
     }
 
     #next,
     #prev {
         font-size: 2.5rem; /* Further reduce button size on mobile */
         top: 45%; /* Adjust button vertical position */
+    }
+    .item h1{
+        color: orange;
+        margin-bottom: 1rem;
+    }
+    
+    .item p{
+        margin-top: 1rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -1264,6 +1275,9 @@ svg {
 
 
 @media (max-width: 600px) {
+    .contact_section{
+        overflow-x: hidden;
+    }
     .container_contact {
         width: 100%;
     }
@@ -1273,10 +1287,19 @@ svg {
     }
 
     .container_contact .row100 {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns on larger screens */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* grid-template-columns: 1fr;  */
+
+    }
+       #buttonContainer {
+        justify-content: center; 
     }
 
-}
+} 
+
+
+
+
 
 
 input[type="submit"] {
@@ -1322,4 +1345,11 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+#buttonContainer {
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    height: 100%;            
 }

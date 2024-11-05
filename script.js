@@ -94,24 +94,24 @@ prev.onclick = function(){
 }
 
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+// document.getElementById("contactForm").addEventListener("submit", function(event) {
+//   event.preventDefault();
 
-  // Send form data to FormSubmit
-  fetch(event.target.action, {
-      method: "POST",
-      body: new FormData(event.target),
-      headers: {
-          'Accept': 'application/json'
-      }
-  }).then(response => {
-      if (response.ok) {
-          document.getElementById("status").innerText = "Thank you for your submission!";
-          event.target.reset();  // Clear the form after successful submission
-      } else {
-          document.getElementById("status").innerText = "Submission failed. Please try again.";
-      }
-  }).catch(error => {
-      document.getElementById("status").innerText = "There was an error: " + error.message;
-  });
-});
+//   // Send form data to FormSubmit
+//   fetch(event.target.action, {
+//       method: "POST",
+//       body: new FormData(event.target),
+//       headers: {
+//           'Accept': 'application/json'
+//       }
+//   }).then(response => {
+//       if (response.ok) {
+//           document.getElementById("status").innerText = "Thank you for your submission!";
+//           event.target.reset();  // Clear the form after successful submission
+//       } else {
+//           document.getElementById("status").innerText = "Submission failed. Please try again.";
+//       }
+//   }).catch(error => {
+//       document.getElementById("status").innerText = "There was an error: " + error.message;
+//   });
+// });
