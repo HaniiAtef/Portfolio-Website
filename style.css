@@ -813,11 +813,12 @@ svg {
 .wrapper .card:nth-child(10) { animation-delay: calc(40s / 10 *(10 - 10) * -1);}
 
 /* Mobile-specific adjustments */
-@media (max-width: 768px) {
+
     @media (max-width: 768px) {
         .exp-container {
             flex-direction: column;
             padding: 0.5rem;
+            overflow: hidden;
         }
     
         .experience_title, .courses_title {
@@ -855,7 +856,7 @@ svg {
             width: 60%; /* Reduced width of the line on mobile */
         }
     }
-}
+
 
 /* CARD EXP  */
 
@@ -1115,7 +1116,7 @@ svg {
 @media (max-width: 768px) {
     .slider {
         height: 550px;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .item {
@@ -1127,8 +1128,8 @@ svg {
 
     #next,
     #prev {
-        font-size: 2.5rem; /* Further reduce button size on mobile */
-        top: 45%; /* Adjust button vertical position */
+        font-size: 2.5rem;
+        top: 45%;
     }
     .item h1{
         color: orange;
@@ -1153,6 +1154,7 @@ svg {
     min-height: 100vh;
     background-color: var(--bg_color_main);
     color: var(--text_color_main);
+    overflow: hidden;
     
 }
 
