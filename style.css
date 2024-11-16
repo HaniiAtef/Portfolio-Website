@@ -286,6 +286,10 @@ svg {
     .left-titles h1 {
         font-size: 6.5rem;
     }
+
+    .left-titles {
+        margin-top: 5rem;
+    }
     
     .salut {
         font-size: 1.2rem;
@@ -357,7 +361,14 @@ svg {
 }
 
 
-
+@-moz-document url-prefix() {
+    @media screen and (max-width: 1500px) {
+        .left-titles {
+            margin-top: 15rem;
+        }
+  
+}
+}
 
 
 /* Media Query for mobile screens */
