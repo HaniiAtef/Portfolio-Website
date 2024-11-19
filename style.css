@@ -373,7 +373,7 @@ svg {
 /* Mac Book air 1280 px x 832px */
 @media screen and (max-width: 1300px) {
     .left-titles {
-        margin-top: 25rem;
+        margin-top: 18rem;
     }
 
     .left-titles h1 {
