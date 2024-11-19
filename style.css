@@ -370,6 +370,63 @@ svg {
 }
 }
 
+/* Mac Book air 1280 px x 832px */
+@media screen and (max-width: 1300px) {
+    .left-titles {
+        margin-top: 25rem;
+    }
+
+    .left-titles h1 {
+        font-size: 7.5rem;
+    }
+
+    .arrow {
+        width: 13rem;
+    }
+    
+    .underline {
+        width: 15rem;
+    }
+    
+    .arrow2 {
+        width: 9rem;
+        
+    }
+    
+    .underline2 {
+        width: 13rem;
+    }
+  }
+/* Ipad */
+  @media screen and (max-width: 1100px) {
+    .left-titles {
+        margin-top: 25rem;
+    }
+
+    .left-titles h1 {
+        font-size: 6rem;
+    }
+
+    .arrow {
+        width: 11.5rem;
+    }
+    
+    .underline {
+        width: 12rem;
+    }
+    
+    .arrow2 {
+        width: 7.5rem;
+        
+    }
+    
+    .underline2 {
+        width: 12rem;
+    }
+  }
+
+
+
 
 /* Media Query for mobile screens */
 @media screen and (max-width: 768px) {
